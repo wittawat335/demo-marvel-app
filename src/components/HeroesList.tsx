@@ -1,6 +1,5 @@
 import { useHeroes } from "../hooks/useHeroes";
-import React from "react";
-
+import { HeroesItem } from "./HeroesItem";
 
 export const HeroesList = () => {
   const { loading, heroes } = useHeroes();
@@ -14,7 +13,7 @@ export const HeroesList = () => {
         {loading ? (
           <p>Loading...</p>
         ) : (
-          heroes.map((data,i) => <Heroes></Heroes>)
+          heroes.map((data,i) => <HeroesItem key={i} heroes={data}/>)
         )}
       </div>
     </div>
