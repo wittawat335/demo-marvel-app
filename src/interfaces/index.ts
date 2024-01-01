@@ -1,4 +1,4 @@
-export interface Heros {
+export interface Heroes {
   hero: string;
   name: string;
   link: string;
