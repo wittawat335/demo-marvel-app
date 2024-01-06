@@ -18,9 +18,9 @@
     "paths": {
       "@/*": ["./src/*"],
       "@/components/*":["components/*"],
-      "@/pages/*":["pages/*"]
+      "@/pages/*":["pages/*"],
+      "@/hooks/*":["hooks/*"]
     },
-    
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,

@@ -1,5 +1,6 @@
 import { useHeroes } from "../hooks/useHeroes";
 import { HeroesItem } from "./HeroesItem";
+import { Spinner } from "./Spinner";
 
 export const HeroesList = () => {
   const { loading, heroes } = useHeroes();
@@ -11,9 +12,9 @@ export const HeroesList = () => {
       </h1>
       <div className="flex gap-4 lg:gap-6 flex-wrap justify-center">
         {loading ? (
-          <p>Loading...</p>
+          <Spinner />
         ) : (
-          heroes.map((data,i) => <HeroesItem key={i} heroes={data}/>)
+          heroes.map((data, i) => <HeroesItem key={i} heroes={data} />)
         )}
       </div>
     </div>

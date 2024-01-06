@@ -1,5 +1,6 @@
 import React, { FC, useState } from "react";
 import { Link } from "wouter"; //npm i wouter
+import Logo from "../assets/logo-marvel.png";
 
 export const Navbar: FC = ({ children }) => {
   const [showMenu, setShowMenu] = useState<boolean>(false);
@@ -11,8 +12,12 @@ export const Navbar: FC = ({ children }) => {
             {/* Desktop menu */}
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <Link className="text-white" to="/">
-                  Marvel
+                <Link to="/">
+                  <img
+                    className="h-14 w-20 cursor-pointer"
+                    src={Logo}
+                    alt="Marvel Logo"
+                  />
                 </Link>
               </div>
               <div className="hidden md:block">
