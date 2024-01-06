@@ -29,6 +29,12 @@ export const Navbar: FC = ({ children }) => {
                   >
                     Heroes
                   </Link>
+                  <Link
+                    to="/test"
+                    className="text-white hover:bg-red-800 px-3 py-2 rounded-md text-md font-medium"
+                  >
+                    Test
+                  </Link>
                 </div>
               </div>
             </div>

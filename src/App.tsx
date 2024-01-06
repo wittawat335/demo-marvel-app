@@ -3,7 +3,7 @@ import { Route, Switch } from "wouter";
 
 // Components
 import { Navbar } from "@/components/Navbar";
-import { Heroes, Home } from "./pages";
+import { Heroes, Home, Test } from "./pages";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,6 +14,7 @@ function App() {
         <Switch>
           <Route path="/" component={Home} />
           <Route path="/heroes" component={Heroes} />
+          <Route path="/test" component={Test} />
         </Switch>
       </Navbar>
     </>
